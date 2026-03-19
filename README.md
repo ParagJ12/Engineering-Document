@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/03457cca-ba52-4e08-81cc-dd3cc8c860f4
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+Techneer is an AI-powered web platform that automatically converts complex engineering 
+documents like design specs, CAD exports, and code docs into role-specific summaries, structured 
+PRDs, and conversational Q&A.  
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The product targets the persistent communication gap between technical creators and non
+technical stakeholders, such as product managers, business executives, investors, and operations 
+leads. 
+
+One document upload instantaneously, audience-appropriate intelligence. No manual re-writing. 
+No translation overhead. Every stakeholder speaks the same language. 
+
+Data Flow
+
+All API calls routed through Next.js server-side API routes Gemini key never exposed to 
+browser 
+• Uploaded documents are NOT stored permanently unless the user explicitly saves the 
+analysis 
+• PII scrubbing: strip author metadata from PDFs before sending to Gemini 
+• HTTPS enforced end-to-end; Vercel handles TLS termination 
+• No training data opt-in: Gemini API calls are made with data privacy settings enabled 
