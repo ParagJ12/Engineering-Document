@@ -14,8 +14,17 @@ Data Flow
 
 All API calls routed through Next.js server-side API routes Gemini key never exposed to 
 browser 
+
 • Uploaded documents are NOT stored permanently unless the user explicitly saves the 
 analysis 
+
+
 • PII scrubbing: strip author metadata from PDFs before sending to Gemini 
+
+
 • HTTPS enforced end-to-end; Vercel handles TLS termination 
+
+
+
+
 • No training data opt-in: Gemini API calls are made with data privacy settings enabled 
