@@ -10,7 +10,7 @@ leads.
 One document upload instantaneously, audience-appropriate intelligence. No manual re-writing. 
 No translation overhead. Every stakeholder speaks the same language. 
 
-Data Flow
+**Data Flow**
 
 All API calls routed through Next.js server-side API routes Gemini key never exposed to 
 browser 
@@ -25,6 +25,7 @@ analysis
 • HTTPS enforced end-to-end; Vercel handles TLS termination 
 
 
-
-
 • No training data opt-in: Gemini API calls are made with data privacy settings enabled 
+
+<img width="1374" height="579" alt="image" src="https://github.com/user-attachments/assets/caae9efc-bb96-4b7c-ae81-5d61adcb9ea1" />
+
