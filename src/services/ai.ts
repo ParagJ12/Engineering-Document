@@ -119,7 +119,7 @@ If the file is a CAD model or drawing (e.g., .prt, .asm, .drw), extract whatever
 Format the output in clean Markdown with clear headings, bullet points, and actionable takeaways. Do not include generic AI filler. Get straight to the point.`;
 
   const responseStream = await ai.models.generateContentStream({
-    model: "gemini-3.1-pro-preview", // Keep pro for high-quality generation
+    model: "gemini-3-flash-preview", // Keep normal for free generation
     contents: {
       parts: [
         {
